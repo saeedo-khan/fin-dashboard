@@ -1,0 +1,10 @@
+{
+  "home": {
+    "title": "Welcome to your localized app!",
+    "description": "This is the home page with locale routing."
+  },
+  "Dashboard": {
+    "meta_title": "Dashboard",
+    "meta_description": "This is the dashboard page"
+  }
+}

@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+
+:root {
+  /* Primary Colors */
+  --primary-color: #C8EE44;
+  --secondary-color: #29A073;
+  
+  /* Text Colors */
+  --text-first-color: #1B212D;
+  --text-second-color: #929EAE;
+  --text-third-color: #78778B;
+  --pure-white: #FFFFFF;
+  
+  /* Dark Colors */
+  --dark-1: #2A2F4C;
+  --dark-2: #2A2F4C;
+  --dark-bg: #0F1117;
+  --dark-shade: #2A2F4C;
+  --key-black: #1B212D;
+
+  /* Gray Colors */
+  --gray-1: #FAFAFA;
+  --gray-2: #F8F8F8;
+  --gray-3: #F5F5F5;
+  --gray-4: #FDFDFD;
+  --gray-5: #F2F2F2;
+  
+  /* Status Colors */
+  --error: #EF4444;
+  --success: #10B981;
+  
+  /* Light Theme Variables */
+  --background: var(--pure-white);
+  --foreground: var(--text-first-color);
+  --card: var(--pure-white);
+  --card-foreground: var(--text-first-color);
+  --popover: var(--pure-white);
+  --popover-foreground: var(--text-first-color);
+  --primary: var(--primary-color);
+  --primary-foreground: var(--text-first-color);
+  --secondary: var(--secondary-color);
+  --secondary-foreground: var(--pure-white);
+  --muted: #F8F9FA;
+  --muted-foreground: var(--text-second-color);
+  --accent: var(--secondary-color);
+  --accent-foreground: var(--pure-white);
+  --destructive: var(--error);
+  --destructive-foreground: var(--pure-white);
+  --border: #E9ECEF;
+  --input: #F8F9FA;
+  --ring: var(--primary-color);
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Dark Theme Variables */
+  --background: var(--dark-bg);
+  --foreground: var(--pure-white);
+  --card: var(--dark-1);
+  --card-foreground: var(--pure-white);
+  --popover: var(--dark-1);
+  --popover-foreground: var(--pure-white);
+  --primary: var(--primary-color);
+  --primary-foreground: var(--dark-bg);
+  --secondary: var(--dark-2);
+  --secondary-foreground: var(--pure-white);
+  --muted: var(--dark-shade);
+  --muted-foreground: var(--text-third-color);
+  --accent: var(--dark-2);
+  --accent-foreground: var(--pure-white);
+  --destructive: var(--error);
+  --destructive-foreground: var(--pure-white);
+  --border: var(--dark-2);
+  --input: var(--dark-2);
+  --ring: var(--primary-color);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-grays-1: var(--gray-1);
+  --color-grays-2: var(--gray-2);
+  --color-grays-3: var(--gray-3);
+  --color-grays-4: var(--gray-4);
+  --color-grays-5: var(--gray-5);
+  --spacing-20: 20px;
+  --spacing-15: 15px;
+  --spacing-30: 30px;
+}
