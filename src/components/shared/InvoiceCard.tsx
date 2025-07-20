@@ -30,40 +30,35 @@ export default function InvoiceCard({ data }: InvoiceCardProps) {
   };
 
   return (
-    <div className="bg-card rounded-lg border border-border p-6 w-[375px]">
-      <div className="flex justify-between">
-        {/* Left Section - Invoice Details */}
-        <div className="space-y-4">
+    <div className="bg-card rounded-lg border border-border p-5 max-w-[675px] w-full h-[153px]">
+      <div className='flex justify-between'>
+        <div className="space-y-5">
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-1">
+            <h3 className="text-lg font-semibold text-foreground">
               Invoice Number
             </h3>
+          </div>
+
+          <div>
             <p className="text-sm text-muted-foreground">
               {data.invoiceNumber}
             </p>
-          </div>
-
-          <div className="space-y-2">
-            <div>
               <p className="text-sm text-muted-foreground">
                 Issued Date: {formatDate(data.issuedDate)}
               </p>
-            </div>
-            <div>
               <p className="text-sm text-muted-foreground">
                 Due Date: {formatDate(data.dueDate)}
               </p>
-            </div>
           </div>
         </div>
 
-        {/* Right Section - Billed To Details */}
-        <div className="text-right space-y-4">
-          <div>
-            <h3 className="text-sm font-semibold text-foreground mb-1">
-              Billed to
-            </h3>
-            <div className="space-y-1">
+        <div className="text-right space-y-5">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground">
+                Billed to
+              </h3>
+            </div>
+            <div>
               <p className="text-sm text-muted-foreground">
                 {data.billedTo.name}
               </p>
@@ -74,7 +69,6 @@ export default function InvoiceCard({ data }: InvoiceCardProps) {
                 {data.billedTo.addressLine2}
               </p>
             </div>
-          </div>
         </div>
       </div>
     </div>

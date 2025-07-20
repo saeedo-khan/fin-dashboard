@@ -6,5 +6,9 @@
   "Dashboard": {
     "meta_title": "Dashboard",
     "meta_description": "This is the dashboard page"
+  },
+  "SignIn": {
+    "meta_title": "SignIn",
+    "meta_description": "This is the SignIn page"
   }
 }

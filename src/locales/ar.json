@@ -6,6 +6,10 @@
     "Dashboard": {
         "meta_title": "لوحة التحكم",
         "meta_description": "هذه لوحة التحكم"
+    },
+    "SignIn": {
+      "meta_title": "تسجيل الدخول",
+      "meta_description": "هذه صفحة التسجيل الدخول"
     }
   }
   

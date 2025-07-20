@@ -8,7 +8,7 @@ export default async function CenteredLayout(props: {
   setRequestLocale(locale);
 
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="min-h-screen">
       {props.children}
     </div>
   );

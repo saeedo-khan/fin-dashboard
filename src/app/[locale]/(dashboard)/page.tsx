@@ -3,6 +3,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import BasicInfo from "@/components/shared/BasicInfo";
 import ClientDetailsDemo from "@/components/shared/ClientDetailsDemo";
 import BalanceCardDemo from "@/components/shared/BalanceCardDemo";
+import InvoiceCardDemo from "@/components/shared/InvoiceCardDemo";
+import SearchBarDemo from "@/components/shared/SearchBarDemo";
+import RecentTransactionDemo from "@/components/shared/RecentTransactionDemo";
 
 type IDashboardPageProps = {
   params: Promise<{ locale: string }>;
@@ -40,7 +43,15 @@ export default async function DashboardPage(props: IDashboardPageProps) {
         <ClientDetailsDemo />
         <BalanceCardDemo />
       </div>
-
+      <div className="mt-8">
+        <InvoiceCardDemo />
+      </div>
+      <div className="mt-8">
+        <SearchBarDemo />
+      </div>
+      <div className="mt-8">
+        <RecentTransactionDemo />
+      </div>
     </div>
   );
 }

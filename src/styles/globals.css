@@ -96,6 +96,13 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-text-first: var(--text-first-color);
+  --color-text-second: var(--text-second-color);
+  --color-text-third: var(--text-third-color);
+  --color-text-pure-white: var(--pure-white);
+  --color-text-error: var(--error);
+  --color-text-success: var(--success);
+  --color-text-warning: var(--warning);
   --color-grays-1: var(--gray-1);
   --color-grays-2: var(--gray-2);
   --color-grays-3: var(--gray-3);
